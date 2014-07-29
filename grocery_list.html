@@ -4,5 +4,14 @@
 
 
 <body>
-
+  {{> groceryList}}
 </body>
+
+<template name="groceryList">
+  <ul>
+    <li><input type="checkbox" value="apples">Apples</li>
+    <li><input type="checkbox" value="bananas">Bananas</li>
+    <li><input type="checkbox" value="milk">Milk</li>
+    <li><input type="checkbox" value="bread">Bread</li>
+  </ul>
+</template>
