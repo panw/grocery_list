@@ -1,13 +1,14 @@
-<head>
-  <title>grocery_list</title>
-</head>
+<title>Grocery List</title>
 
 <body>
-  {{> hello}}
+  {{> groceryList}}
 </body>
 
-<template name="hello">
-  <h1>Hello World!</h1>
-  {{greeting}}
-  <input type="button" value="Click" />
+<template name="groceryList">
+  <ul>
+    <li><input type="checkbox" value="apples">Apples</li>
+    <li><input type="checkbox" value="bananas">Bananas</li>
+    <li><input type="checkbox" value="milk">Milk</li>
+    <li><input type="checkbox" value="bread">Bread</li>
+  </ul>
 </template>
