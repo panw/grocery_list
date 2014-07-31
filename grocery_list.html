@@ -13,7 +13,7 @@
   <!-- loop through all entries in the Item Collection -->
   {{#each items}}
    <!-- render the current items name -->
-   <li><input type="checkbox" id="{{_id}}" value="{{name}}">{{name}}</li>
+   <li class="list-item" id="{{_id}}"><input type="checkbox" value="{{name}}">{{name}}</li>
   {{/each}}
   </ul>
 </template>
