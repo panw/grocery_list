@@ -1,7 +1,6 @@
 Items = new Meteor.Collection('items');
 
 if(Meteor.isClient){
-
   Template.groceryList.events({
     'click li' : function(event, template){
       var listItem = event.currentTarget; // get the list item being clicked on
@@ -19,7 +18,7 @@ if(Meteor.isClient){
 
   Template.groceryList.helpers({
     items: function() {
-      return Items.find();
+      return Items.find({checked:false});
     }
   });
 }
