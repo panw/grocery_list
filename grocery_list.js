@@ -10,9 +10,9 @@ if(Meteor.isClient){
 
 if(Meteor.isServer){
   if (Items.find().count() === 0) {
-    Items.insert({ name: "Baguette" });
-    Items.insert({ name: "Butter" });
-    Items.insert({ name: "Jam" });
-    Items.insert({ name: "Coconut" });
+    Items.insert({ name: "Baguette"});
+    Items.insert({ name: "Butter"});
+    Items.insert({ name: "Jam"});
+    Items.insert({ name: "Coconut"});
   }
 }
