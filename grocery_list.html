@@ -9,6 +9,7 @@
 
  <!-- define template name groceryList -->
 <template name="groceryList">
+  <input type="text" id="new-item" name="new-item" placeholder="Add an item..."><input type="submit" id="add-button" value="Add">
   <ul>
   <!-- loop through all entries in the Item Collection -->
   {{#each items}}

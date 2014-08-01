@@ -13,6 +13,20 @@ if(Meteor.isClient){
           console.log(error.reason);
         }
       });
+    },
+
+    'click #add-button' : function(event, template) {
+      // prevent button's default action
+      event.preventDefault();
+
+      // get the new item's name
+      var newItem = $("#new-item").val();
+
+      // add new item to the database
+      Items.insert({ name:newItem, checked:false });
+
+      // clear input field once we have stored the data
+      $("#new-item").val("");
     }
   });
 
